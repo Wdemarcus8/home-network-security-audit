@@ -21,8 +21,8 @@ This project demonstrates practical skills needed for entry-level security roles
 
 ## 🧭 Scope of the Audit
 The audit targeted the home LAN:
-- Subnet: **192.168.1.0/24**
-- Gateway: **192.168.1.254**
+- Subnet: **192.168.1.xxx/24**
+- Gateway: **192.168.1.xxx**
 - Devices discovered: **16**
 
 Devices included:
@@ -108,7 +108,5 @@ IoT devices often have:
 This project is the first part of a growing cybersecurity portfolio. Additional planned projects include:
 - Wireshark network traffic analysis  
 - Malicious packet investigation  
-- Cloud fundamentals (AZ-900)  
-- Basic SOC-style alert analysis  
 
 
