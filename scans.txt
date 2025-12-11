@@ -2,71 +2,71 @@ Nmap Scan – Discovery Scan
 ==========================
 
 Command:
-nmap -sn 192.168.1.0/24
+nmap -sn 192.168.1.xxx/24
 
 Output:
 Starting Nmap 7.94 ( https://nmap.org ) at 2025-12-10 19:35 Eastern Standard Time
-Nmap scan report for 192.168.1.105
+Nmap scan report for 192.168.1.xxx
 Host is up (0.15s latency).
-MAC Address: 18:7F:88:FC:5D:15 (Unknown)
+MAC Address: 18:7F:88:FC:xx:xx (Unknown)
 
-Nmap scan report for amazon-f122cd065 (192.168.1.106)
+Nmap scan report for amazon-f122cd065 (192.168.1.xxx)
 Host is up (0.29s latency).
-MAC Address: 74:E2:0C:8E:D0:B2 (Amazon Technologies)
+MAC Address: 74:E2:0C:8E:xx:xx (Amazon Technologies)
 
-Nmap scan report for 3CA3088271C6-mysimplelink.attlocal.net (192.168.1.109)
+Nmap scan report for 3CA3088271C6-mysimplelink.attlocal.net (192.168.1.xxx)
 Host is up (0.14s latency).
-MAC Address: 3C:A3:08:82:71:C6 (Texas Instruments)
+MAC Address: 3C:A3:08:82:xx:xx (Texas Instruments)
 
-Nmap scan report for 192.168.1.110
+Nmap scan report for 192.168.1.xxx
 Host is up (0.29s latency).
-MAC Address: F8:FC:E1:4F:BC:41 (Amazon Technologies)
+MAC Address: F8:FC:E1:4F:xx:xx (Amazon Technologies)
 
-Nmap scan report for none.attlocal.net (192.168.1.113)
+Nmap scan report for none.attlocal.net (192.168.1.xxx)
 Host is up (0.18s latency).
-MAC Address: F8:54:B8:65:E3:DF (Amazon Technologies)
+MAC Address: F8:54:B8:65:xx:xx (Amazon Technologies)
 
-Nmap scan report for amazon-85d5f66c3 (192.168.1.115)
+Nmap scan report for amazon-85d5f66c3 (192.168.1.xxx)
 Host is up (0.12s latency).
-MAC Address: 0C:43:F9:35:7B:D8 (Amazon Technologies)
+MAC Address: 0C:43:F9:35:xx:xx (Amazon Technologies)
 
-Nmap scan report for SC0F8BE7.attlocal.net (192.168.1.178)
+Nmap scan report for SC0F8BE7.attlocal.net (192.168.1.xxx)
 Host is up (0.36s latency).
-MAC Address: 3C:62:F0:0F:8B:E7 (Sercomm)
+MAC Address: 3C:62:F0:0F:xx:xx (Sercomm)
 
-Nmap scan report for ChimePro-b8 (192.168.1.216)
+Nmap scan report for ChimePro-b8 (192.168.1.xxx)
 Host is up (0.13s latency).
-MAC Address: CC:3B:FB:93:2B:B8 (Unknown)
+MAC Address: CC:3B:FB:93:xx:xx (Unknown)
 
-Nmap scan report for 43TCLRokuTV.attlocal.net (192.168.1.219)
+Nmap scan report for 43TCLRokuTV.attlocal.net (192.168.1.xxx)
 Host is up (0.25s latency).
-MAC Address: 94:8C:D7:94:A7:FC (Unknown)
+MAC Address: 94:8C:D7:94:xx:xx (Unknown)
 
-Nmap scan report for iPhone (192.168.1.220)
+Nmap scan report for iPhone (192.168.1.xxx)
 Host is up (0.25s latency).
-MAC Address: 0E:08:5A:91:B2:5C (Unknown)
+MAC Address: 0E:08:5A:91:xx:xx (Unknown)
 
-Nmap scan report for hon-grip-aio-200-01939V2A.attlocal.net (192.168.1.243)
+Nmap scan report for hon-grip-aio-200-01939V2A.attlocal.net (192.168.1.xxx)
 Host is up (0.11s latency).
-MAC Address: 48:A2:E6:7D:72:1E (Resideo)
+MAC Address: 48:A2:E6:7D:xx:xx (Resideo)
 
-Nmap scan report for Android-3-attlocal-net (192.168.1.244)
+Nmap scan report for Android-3-attlocal-net (192.168.1.xxx)
 Host is up (0.31s latency).
-MAC Address: 74:E2:0C:14:E0:73 (Amazon Technologies)
+MAC Address: 74:E2:0C:14:xx:xx (Amazon Technologies)
 
-Nmap scan report for 192.168.1.245
+Nmap scan report for 192.168.1.xxx
 Host is up (0.21s latency).
-MAC Address: 50:D4:5C:62:4F:9A (Unknown)
+MAC Address: 50:D4:5C:62:xx:xx (Unknown)
 
-Nmap scan report for SC0F8BE5 (192.168.1.246)
+Nmap scan report for SC0F8BE5 (192.168.1.xxx)
 Host is up (0.21s latency).
-MAC Address: 3C:62:F0:0F:8B:E5 (Sercomm)
+MAC Address: 3C:62:F0:0F:xx:xx (Sercomm)
 
-Nmap scan report for dsldevice.attlocal.net (192.168.1.254)
+Nmap scan report for dsldevice.attlocal.net (192.168.1.xxx)
 Host is up (0.011s latency).
-MAC Address: B4:63:6F:6F:28:02 (Unknown)
+MAC Address: B4:63:6F:6F:xx:xx (Unknown)
 
-Nmap scan report for DESKTOP-G3N62CE (192.168.1.251)
+Nmap scan report for DESKTOP-G3N62CE (192.168.1.xxx)
 Host is up.
 
 Nmap done: 256 IP addresses (16 hosts up) scanned in 17.07 seconds
@@ -76,11 +76,11 @@ Router Scan – Service & OS Detection
 ====================================
 
 Command:
-nmap -sV -O 192.168.1.254
+nmap -sV -O 192.168.1.xxx
 
 Output:
 Starting Nmap 7.94 ( https://nmap.org ) at 2025-12-10 19:46 Eastern Standard Time
-Nmap scan report for dsldevice.attlocal.net (192.168.1.254)
+Nmap scan report for dsldevice.attlocal.net (192.168.1.xxx)
 Host is up (0.0030s latency).
 Not shown: 996 closed tcp ports (reset)
 
@@ -105,18 +105,18 @@ Device Scan – Android Device
 ============================
 
 Command:
-nmap -sV -O 192.168.1.245
+nmap -sV -O 192.168.1.xxx
 
 Output:
 Starting Nmap 7.94 ( https://nmap.org ) at 2025-12-10 19:51 Eastern Standard Time
-Nmap scan report for 192.168.1.245
+Nmap scan report for 192.168.1.xxx
 Host is up (0.0069s latency).
 Not shown: 999 closed tcp ports (reset)
 
 PORT     STATE SERVICE    VERSION
 8009/tcp open  tcpwrapped
 
-MAC Address: 50:D4:5C:62:4F:9A (Unknown)
+MAC Address: 50:D4:5C:62:xx:xx (Unknown)
 
 Device type: media device | phone
 Running: Amazon embedded, CyanogenMod 12.X, Google Android 5.X
@@ -130,11 +130,11 @@ Host Scan – Windows Laptop
 ==========================
 
 Command:
-nmap -sV -O -sC -p- 192.168.1.251
+nmap -sV -O -sC -p- 192.168.1.xxx
 
 Output:
 Starting Nmap 7.94 ( https://nmap.org ) at 2025-12-10 20:16 Eastern Standard Time
-Nmap scan report for DESKTOP-G3N62CE.attlocal.net (192.168.1.251)
+Nmap scan report for DESKTOP-G3N62CE.attlocal.net (192.168.1.xxx)
 Host is up (0.00045s latency).
 
 Not shown: 65522 closed tcp ports (reset)
