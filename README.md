@@ -111,3 +111,4 @@ This project is the first part of a growing cybersecurity portfolio. Additional 
 - Cloud fundamentals (AZ-900)  
 - Basic SOC-style alert analysis  
 
+
