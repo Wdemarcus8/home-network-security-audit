@@ -1,0 +1,166 @@
+Nmap Scan – Discovery Scan
+==========================
+
+Command:
+nmap -sn 192.168.1.0/24
+
+Output:
+Starting Nmap 7.94 ( https://nmap.org ) at 2025-12-10 19:35 Eastern Standard Time
+Nmap scan report for 192.168.1.105
+Host is up (0.15s latency).
+MAC Address: 18:7F:88:FC:5D:15 (Unknown)
+
+Nmap scan report for amazon-f122cd065 (192.168.1.106)
+Host is up (0.29s latency).
+MAC Address: 74:E2:0C:8E:D0:B2 (Amazon Technologies)
+
+Nmap scan report for 3CA3088271C6-mysimplelink.attlocal.net (192.168.1.109)
+Host is up (0.14s latency).
+MAC Address: 3C:A3:08:82:71:C6 (Texas Instruments)
+
+Nmap scan report for 192.168.1.110
+Host is up (0.29s latency).
+MAC Address: F8:FC:E1:4F:BC:41 (Amazon Technologies)
+
+Nmap scan report for none.attlocal.net (192.168.1.113)
+Host is up (0.18s latency).
+MAC Address: F8:54:B8:65:E3:DF (Amazon Technologies)
+
+Nmap scan report for amazon-85d5f66c3 (192.168.1.115)
+Host is up (0.12s latency).
+MAC Address: 0C:43:F9:35:7B:D8 (Amazon Technologies)
+
+Nmap scan report for SC0F8BE7.attlocal.net (192.168.1.178)
+Host is up (0.36s latency).
+MAC Address: 3C:62:F0:0F:8B:E7 (Sercomm)
+
+Nmap scan report for ChimePro-b8 (192.168.1.216)
+Host is up (0.13s latency).
+MAC Address: CC:3B:FB:93:2B:B8 (Unknown)
+
+Nmap scan report for 43TCLRokuTV.attlocal.net (192.168.1.219)
+Host is up (0.25s latency).
+MAC Address: 94:8C:D7:94:A7:FC (Unknown)
+
+Nmap scan report for iPhone (192.168.1.220)
+Host is up (0.25s latency).
+MAC Address: 0E:08:5A:91:B2:5C (Unknown)
+
+Nmap scan report for hon-grip-aio-200-01939V2A.attlocal.net (192.168.1.243)
+Host is up (0.11s latency).
+MAC Address: 48:A2:E6:7D:72:1E (Resideo)
+
+Nmap scan report for Android-3-attlocal-net (192.168.1.244)
+Host is up (0.31s latency).
+MAC Address: 74:E2:0C:14:E0:73 (Amazon Technologies)
+
+Nmap scan report for 192.168.1.245
+Host is up (0.21s latency).
+MAC Address: 50:D4:5C:62:4F:9A (Unknown)
+
+Nmap scan report for SC0F8BE5 (192.168.1.246)
+Host is up (0.21s latency).
+MAC Address: 3C:62:F0:0F:8B:E5 (Sercomm)
+
+Nmap scan report for dsldevice.attlocal.net (192.168.1.254)
+Host is up (0.011s latency).
+MAC Address: B4:63:6F:6F:28:02 (Unknown)
+
+Nmap scan report for DESKTOP-G3N62CE (192.168.1.251)
+Host is up.
+
+Nmap done: 256 IP addresses (16 hosts up) scanned in 17.07 seconds
+
+
+Router Scan – Service & OS Detection
+====================================
+
+Command:
+nmap -sV -O 192.168.1.254
+
+Output:
+Starting Nmap 7.94 ( https://nmap.org ) at 2025-12-10 19:46 Eastern Standard Time
+Nmap scan report for dsldevice.attlocal.net (192.168.1.254)
+Host is up (0.0030s latency).
+Not shown: 996 closed tcp ports (reset)
+
+PORT    STATE    SERVICE    VERSION
+53/tcp  open     tcpwrapped
+80/tcp  open     http       lighttpd 1.4.69
+111/tcp filtered rpcbind
+443/tcp open     ssl/http   lighttpd 1.4.69
+
+MAC Address: B4:63:6F:6F:28:02 (Unknown)
+
+Device type: general purpose
+Running: Linux 4.X|5.X
+OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5
+OS details: Linux 4.15 - 5.8
+Network Distance: 1 hop
+
+Nmap done: 1 IP address (1 host up) scanned in 19.22 seconds
+
+
+Device Scan – Android Device
+============================
+
+Command:
+nmap -sV -O 192.168.1.245
+
+Output:
+Starting Nmap 7.94 ( https://nmap.org ) at 2025-12-10 19:51 Eastern Standard Time
+Nmap scan report for 192.168.1.245
+Host is up (0.0069s latency).
+Not shown: 999 closed tcp ports (reset)
+
+PORT     STATE SERVICE    VERSION
+8009/tcp open  tcpwrapped
+
+MAC Address: 50:D4:5C:62:4F:9A (Unknown)
+
+Device type: media device | phone
+Running: Amazon embedded, CyanogenMod 12.X, Google Android 5.X
+OS details: Amazon Kindle Paperwhite, CyanogenMod 12 (Android 5.0.2)
+Network Distance: 1 hop
+
+Nmap done: 1 IP address (1 host up) scanned in 8.90 seconds
+
+
+Host Scan – Windows Laptop
+==========================
+
+Command:
+nmap -sV -O -sC -p- 192.168.1.251
+
+Output:
+Starting Nmap 7.94 ( https://nmap.org ) at 2025-12-10 20:16 Eastern Standard Time
+Nmap scan report for DESKTOP-G3N62CE.attlocal.net (192.168.1.251)
+Host is up (0.00045s latency).
+
+Not shown: 65522 closed tcp ports (reset)
+
+PORT      STATE    SERVICE         VERSION
+135/tcp   open     msrpc           Microsoft Windows RPC
+137/tcp   filtered netbios-ns
+139/tcp   open     netbios-ssn     Microsoft Windows netbios-ssn
+445/tcp   open     microsoft-ds?
+902/tcp   open     ssl/vmware-auth VMware Authentication Daemon 1.10
+912/tcp   open     vmware-auth     VMware Authentication Daemon 1.0
+5040/tcp  open     unknown
+49664/tcp open     msrpc
+49665/tcp open     msrpc
+49666/tcp open     msrpc
+49667/tcp open     msrpc
+49670/tcp open     msrpc
+49672/tcp open     msrpc
+
+Host script results:
+smb2-time:
+  date: 2025-12-11T01:18:24
+smb2-security-mode:
+  Message signing enabled but not required
+
+Service Info: OS: Windows
+
+Nmap done: 1 IP address (1 host up) scanned in 115.91 seconds
+
