@@ -8,13 +8,13 @@
 This document summarizes the results of a home network audit performed using Nmap.  
 The goal was to identify devices on the network, detect open services, and find potential security risks.
 
-A total of **16 active devices** were discovered on the subnet `192.168.1.0/24`.
+A total of **16 active devices** were discovered on the subnet `192.168.1.xxx/24`.
 
 ---
 
 ## 2. Key Findings Summary
 
-### 2.1 Router (192.168.1.254)
+### 2.1 Router (192.168.1.xxx)
 **Open Ports:**
 - 53 (DNS)
 - 80 (HTTP – Lighttpd 1.4.69)
@@ -30,7 +30,7 @@ A total of **16 active devices** were discovered on the subnet `192.168.1.0/24`.
 
 ---
 
-### 2.2 Android Device (192.168.1.245)
+### 2.2 Android Device (192.168.1.xxx)
 **Identified As:** Android device or Amazon‑based embedded OS  
 **Open Port:**
 - 8009 (common for ADB / debugging / media communication)
@@ -61,7 +61,7 @@ Several IoT devices were detected, including:
 
 ---
 
-### 2.4 Windows Laptop (192.168.1.251)
+### 2.4 Windows Laptop (192.168.1.xxx)
 **Open Ports from Full Scan (`-p- -sV -sC`):**
 - 135 (MSRPC)
 - 137 (NetBIOS – filtered)
