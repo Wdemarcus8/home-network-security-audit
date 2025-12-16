@@ -90,7 +90,6 @@ IoT devices often have:
 ## 📂 Project Files
 - **scans.txt** — Full Nmap results  
 - **findings.md** — Detailed analysis of each device  
-- **network-diagram.png** (optional)  
 
 ---
 
